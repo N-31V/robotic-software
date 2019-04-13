@@ -18,6 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/n-31v/robotic-software/ros_workspace/camera/include"
+  "/opt/ros/kinetic/include"
   "/usr/src/gmock/include"
   "/usr/src/gmock"
   "/usr/src/gtest/include"

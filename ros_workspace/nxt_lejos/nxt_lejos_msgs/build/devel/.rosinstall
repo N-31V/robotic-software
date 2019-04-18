@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/n-31v/robotic-software/ros_workspace/nxt_lejos/nxt_lejos_msgs/build/devel/setup.sh

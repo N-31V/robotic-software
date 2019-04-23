@@ -1,0 +1,49 @@
+package test;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+
+
+public class Simple_server {
+
+/**
+ * 
+ * @param args
+ * @throws InterruptedException
+ */
+	
+    public static void main(String[] args) throws InterruptedException {
+        try (ServerSocket server= new ServerSocket(9090)){                            
+        	Socket client = server.accept();           
+            DataOutputStream out = new DataOutputStream(client.getOutputStream());
+            DataInputStream in = new DataInputStream(client.getInputStream());
+        
+            while(!client.isClosed()){
+	            System.out.println("Server reading from channel");       
+	            String entry = in.readUTF();     
+	            System.out.println("READ from client message - "+entry);
+	            if(entry.equalsIgnoreCase("q")){
+	                System.out.println("Client initialize connections suicide ...");
+	                out.writeUTF("Server reply - "+entry + " - OK");
+	                out.flush();
+	                break;
+	            }
+	            out.writeUTF("Server reply - "+entry + " - OK");     
+	            System.out.println("Server reply - "+entry + " - OK");
+	            out.flush();
+            }
+   
+            System.out.println("Client disconnected");
+            in.close();
+            out.close();
+            client.close();
+            System.out.println("Closing connections & channels - DONE.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

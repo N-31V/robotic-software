@@ -22,5 +22,4 @@ INDEX VERSION 1.126+/home/n-31v/robotic-software/java_workspace/.metadata/.plugi
 2020716298.index
 1915127935.index
 1628687906.index
-3312796996.index
 821608291.index

@@ -3,14 +3,22 @@
 import socket
 
 sock = socket.socket()
-sock.bind(('localhost', 9090))
+sock.bind(('', 9090))
 go=True
 with open("Py/ggg.jpg", "wb+") as f:
-	sock.listen(1)
-	conn, addr = sock.accept()
-	print 'connected:', addr
-	while True:
-		data = conn.recv(1024)
-		if not data:
-			break;
-	conn.close()
+	while go:
+		sock.listen(1)
+		conn, addr = sock.accept()
+		print 'connected:', addr
+		while True:
+			data = conn.recv(1024)
+			if not data:
+				break
+		
+			if data == "q\n":
+				go = False
+				print (data)
+			else:
+				f.write(data)
+				print('writting...') 
+		conn.close()

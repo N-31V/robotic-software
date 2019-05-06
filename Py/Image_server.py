@@ -3,7 +3,7 @@
 import socket
 
 sock = socket.socket()
-sock.bind(('localhost', 9090))
+sock.bind(('', 9090))
 go=True
 with open("Py/ggg.jpg", "wb+") as f:
 	while go:

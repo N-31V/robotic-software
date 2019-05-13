@@ -1,0 +1,76 @@
+package test;
+
+import java.util.Arrays;
+
+import lejos.hardware.BrickFinder;
+import lejos.hardware.ev3.EV3;
+import lejos.hardware.ev3.LocalEV3;
+import lejos.hardware.lcd.LCD;
+import lejos.hardware.port.Port;
+import lejos.hardware.sensor.EV3UltrasonicSensor;
+import lejos.hardware.sensor.SensorModes;
+import lejos.robotics.RegulatedMotor;
+import lejos.robotics.SampleProvider;
+import lejos.hardware.motor.EV3LargeRegulatedMotor; 
+import lejos.hardware.motor.EV3MediumRegulatedMotor; 
+
+class ObjectDetectionBot { 
+
+	public static void main(String[] args) throws Exception { 
+	
+		final int MOTOR_BC_STEP_ROTATION = 360;//Размер шага для моторов B и C при вращении на 90 градусов. 
+		final int MOTOR_A_STEP_TO_CATCH = 60; //Размер шага для среднего мотора для фиксации цели 
+		
+		EV3 ev3 = (EV3) BrickFinder.getLocal();
+		//Инициализируем моторы. 
+		RegulatedMotor motorB = new EV3LargeRegulatedMotor(ev3.getPort("B")); 
+		RegulatedMotor motorC = new EV3LargeRegulatedMotor(ev3.getPort("C")); 
+		RegulatedMotor motorA = new EV3MediumRegulatedMotor(ev3.getPort("A")); 		
+		//Инициализируем датчики. 
+		SensorModes sensor1 = new EV3UltrasonicSensor(ev3.getPort("S1")); 
+		SensorModes sensor2 = new EV3UltrasonicSensor(ev3.getPort("S2")); 		
+		//Получаем поставщика замеров для измерения расстояния. 
+		SampleProvider distance1 = sensor1.getMode("Distance"); 
+		SampleProvider distance2 = sensor2.getMode("Distance"); 
+		//Создаём массив для получения замеров. 
+		//Размер массива запрашиваем у поставщика замеров. 
+		float[] sample1 = new float[distance1.sampleSize()]; 
+		float[] sample2 = new float[distance2.sampleSize()]; 
+		LCD.drawString("Ready", 0, 0); 
+
+		distance1.fetchSample(sample1,0); 
+		distance2.fetchSample(sample2,0); 
+		double corridorLength1 = sample1[0]; 
+		double corridorLength2 = sample2[0];
+		
+		LCD.drawString(Double.toString(corridorLength1), 0, 0); 
+		LCD.drawString(Double.toString(corridorLength2), 0, 1); 
+		//Получаем длину коридора в метрах (или 2,5, если больше). 
+
+
+		motorB.rotate(MOTOR_BC_STEP_ROTATION);//Поворачиваем так, чтобы начать обход. 
+		motorB.waitComplete(); 
+		distance1.fetchSample(sample1,0); 
+		distance2.fetchSample(sample2,0); 
+		double corridorWidth1 = sample1[0]; 
+		double corridorWidth2 = sample2[0]; 
+		LCD.drawString(Double.toString(corridorWidth1), 0, 3); 
+		LCD.drawString(Double.toString(corridorWidth2), 0, 4); 
+		//Получаем ширину коридора в метрах, на которую мы будем ориентироваться при проходе. 
+
+		motorB.synchronizeWith(new RegulatedMotor[] {motorC});//Синхронизируем скорости вращения моторов. 
+		motorB.startSynchronization(); 
+		LCD.drawString("synhr", 0, 2); 
+
+		while ((sample1[0]>=(corridorWidth1-0.1)) && (sample2[0]>=(corridorWidth2-0.1)));//Поиск возможных объектов. 
+		{ 
+			LCD.drawString("1!", 0, 6); 
+			distance1.fetchSample(sample1, 0); 
+			distance2.fetchSample(sample2, 0); 
+			motorB.rotate(200); 
+		} 
+		LCD.drawString("finish", 0, 6); 
+
+	} 
+}
+

@@ -34,11 +34,11 @@ public class CameraClientTest {
         Video video = ev3.getVideo(); // Получение экземпляра объекта Video
         video.open(WIDTH, HEIGHT); // Подготовка камеры к работе
         byte[] frame = video.createFrame(); //   Создание массива байтов для хранения кадра 
-        clientSocket = new Socket(InetAddress.getByName("10.0.1.3"), 9090); // этой строкой мы запрашиваем
+        clientSocket = new Socket(InetAddress.getByName("10.0.1.2"), 9090); // этой строкой мы запрашиваем
         out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
         in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         BufferedImage img = new BufferedImage(WIDTH, HEIGHT,BufferedImage.TYPE_INT_RGB); // Объект для пересылаемого изображения
-        while (Button.ESCAPE.isUp()) {
+        //while (Button.ESCAPE.isUp()) {
 	        video.grabFrame(frame); // Получение кадра
 	        for(int i=0;i<FRAME_SIZE;i+=4) {
 	            int y1 = frame[i] & 0xFF;
@@ -51,7 +51,7 @@ public class CameraClientTest {
 	            img.setRGB((i % (WIDTH * 2)) / 2 + 1, i / (WIDTH * 2), rgb2);
 	        }
 	        writeJpg(clientSocket.getOutputStream(), img); 
-        }
+        //}
         // всё закрываем
         video.close();
         out.close();

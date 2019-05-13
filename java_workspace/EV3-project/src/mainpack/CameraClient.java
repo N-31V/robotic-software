@@ -25,8 +25,8 @@ public class CameraClient {
     private byte[] frame;
     BufferedImage img;
 
-    CameraClient(EV3 ev3) throws IOException{
-    	this(ev3, 160, 120, "10.0.1.3");
+    CameraClient(EV3 ev3, String ip) throws IOException{
+    	this(ev3, 160, 120, ip);
     }
     
     CameraClient(EV3 ev3, int width, int height, String ip) throws IOException{
@@ -47,8 +47,6 @@ public class CameraClient {
     }
     
     String SendPhoto() throws UnknownHostException, IOException{
-    	Socket clientSocket = new Socket(InetAddress.getByName(this.IP), 9090);
-    	BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         this.video.grabFrame(this.frame);
         for(int i=0;i<this.FRAME_SIZE;i+=4) {
             int y1 = this.frame[i] & 0xFF;
@@ -63,6 +61,8 @@ public class CameraClient {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         ImageIO.write(this.img, "jpg", baos);
         byte[] imageBytes = baos.toByteArray();
+        Socket clientSocket = new Socket(InetAddress.getByName(this.IP), 9090);
+    	BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         clientSocket.getOutputStream().write(imageBytes);
         String response = in.readLine(); 
         in.close();

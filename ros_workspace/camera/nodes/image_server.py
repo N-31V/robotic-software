@@ -17,6 +17,7 @@ def response(tmp):
 if __name__ == "__main__":
 	sock = socket.socket()
 	sock.bind(('', 9090))
+	print('server is ready')
 	go=True
 	while go:
 		sock.listen(1)

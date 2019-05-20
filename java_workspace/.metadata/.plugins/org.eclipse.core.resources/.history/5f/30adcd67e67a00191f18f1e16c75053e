@@ -36,6 +36,8 @@ public class CameraClient {
     	this.FRAME_SIZE = this.NUM_PIXELS * 2;
     	this.IP=ip;
     	this.video = ev3.getVideo();
+    	this.video.open(this.WIDTH, this.HEIGHT);
+    	this.frame = video.createFrame();
     	this.img = new BufferedImage(WIDTH, HEIGHT,BufferedImage.TYPE_INT_RGB);
     	
     }
@@ -44,11 +46,8 @@ public class CameraClient {
     	this.video.close();
     }
     
-    boolean SendPhoto(int port) throws UnknownHostException, IOException{
-    	this.video.open(this.WIDTH, this.HEIGHT);
-    	this.frame = video.createFrame();
+    String SendPhoto(int port) throws UnknownHostException, IOException{
         this.video.grabFrame(this.frame);
-        this.video.close();
         for(int i=0;i<this.FRAME_SIZE;i+=4) {
             int y1 = this.frame[i] & 0xFF;
             int y2 = this.frame[i+2] & 0xFF;
@@ -68,7 +67,7 @@ public class CameraClient {
         String response = in.readLine(); 
         in.close();
         clientSocket.close();
-        return true;
+        return response;
     }
  
     private static int convertYUVtoARGB(int y, int u, int v) {

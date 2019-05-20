@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="25" version="2.0">
+<workbench progressCount="22" version="2.0">
 <workbenchAdvisor/>
 <window height="772" maximized="true" width="970" x="211" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -38,22 +38,32 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CameraClient.java" partName="CameraClient.java" path="/home/n-31v/robotic-software/java_workspace/EV3-project/src/mainpack/CameraClient.java" title="CameraClient.java" tooltip="EV3-project/src/mainpack/CameraClient.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CameraClient.java" partName="CameraClient.java" path="/home/n-31v/robotic-software/java_workspace/EV3-project/src/mainpack/CameraClient.java" title="CameraClient.java" tooltip="EV3-project/src/mainpack/CameraClient.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EV3-project/src/mainpack/CameraClient.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1970" selectionTopPixel="564"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2384" selectionTopPixel="694"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainClass.java" partName="MainClass.java" path="/home/n-31v/robotic-software/java_workspace/EV3-project/src/mainpack/MainClass.java" title="MainClass.java" tooltip="EV3-project/src/mainpack/MainClass.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainClass.java" partName="MainClass.java" path="/home/n-31v/robotic-software/java_workspace/EV3-project/src/mainpack/MainClass.java" title="MainClass.java" tooltip="EV3-project/src/mainpack/MainClass.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EV3-project/src/mainpack/MainClass.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="334" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="173" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObjectDetectionBot.java" partName="ObjectDetectionBot.java" path="/home/n-31v/robotic-software/java_workspace/EV3-project/src/test/ObjectDetectionBot.java" title="ObjectDetectionBot.java" tooltip="EV3-project/src/test/ObjectDetectionBot.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EV3-project/src/test/ObjectDetectionBot.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2732" selectionTopPixel="978"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObjectDetectionBot.java" partName="ObjectDetectionBot.java" path="/home/n-31v/robotic-software/java_workspace/EV3-project/src/mainpack/ObjectDetectionBot.java" title="ObjectDetectionBot.java" tooltip="EV3-project/src/mainpack/ObjectDetectionBot.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/EV3-project/src/mainpack/ObjectDetectionBot.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4093" selectionTopPixel="1425"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
 <viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.MembersView" partName="Members">
+<viewState hidefields="false" hidelocaltypes="false" hidenonpublic="false" hidestatic="false" org.eclipse.jdt.ui.browsing.memberstoeditor="1">
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.MembersView.SyntheticMembersFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.MembersView.ImportDeclarationFilter" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
+<selectedElements>&#x0A;<selectedElement selectedElementPath="=EV3-project/src&lt;test{HelloWorld.java[HelloWorld~main~\[QString;"/>
+</selectedElements>
+</viewState>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -87,8 +97,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Warnings (7 items)"/>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (17 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="120" org.eclipse.ui.ide.markerType="269" org.eclipse.ui.ide.pathField="160" org.eclipse.ui.ide.resourceField="120" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -100,6 +110,23 @@
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.PackagesView" partName="Packages">
+<viewState org.eclipse.jdt.ui.PackagesView.viewState="0" org.eclipse.jdt.ui.browsing.packagestoeditor="1" workingSetName="">
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.internal.ui.PackagesView.NoPackageContainingFolders" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackagesView.EmptyPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackagesView.EmptyInnerPackageFilter" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
+<selectedElements>&#x0A;<selectedElement selectedElementPath="=EV3-project/src&lt;test"/>
+</selectedElements>
+</viewState>
 </view>
 <view id="org.eclipse.jdt.ui.ProjectsView" partName="Projects">
 <viewState org.eclipse.jdt.ui.browsing.projectstoeditor="1" workingSetName="">
@@ -124,33 +151,6 @@
 </xmlDefinedFilters>
 </customFilters>
 <selectedElements>&#x0A;<selectedElement selectedElementPath="=EV3-project/src&lt;test{HelloWorld.java[HelloWorld"/>
-</selectedElements>
-</viewState>
-</view>
-<view id="org.eclipse.jdt.ui.MembersView" partName="Members">
-<viewState hidefields="false" hidelocaltypes="false" hidenonpublic="false" hidestatic="false" org.eclipse.jdt.ui.browsing.memberstoeditor="1">
-<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.MembersView.SyntheticMembersFilter" isEnabled="true"/>
-<child filterId="org.eclipse.jdt.ui.MembersView.ImportDeclarationFilter" isEnabled="true"/>
-</xmlDefinedFilters>
-</customFilters>
-<selectedElements>&#x0A;<selectedElement selectedElementPath="=EV3-project/src&lt;test{HelloWorld.java[HelloWorld~main~\[QString;"/>
-</selectedElements>
-</viewState>
-</view>
-<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
-<viewState/>
-</view>
-<view id="org.eclipse.jdt.ui.PackagesView" partName="Packages">
-<viewState org.eclipse.jdt.ui.PackagesView.viewState="0" org.eclipse.jdt.ui.browsing.packagestoeditor="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.internal.ui.PackagesView.NoPackageContainingFolders" isEnabled="true"/>
-<child filterId="org.eclipse.jdt.internal.ui.PackagesView.EmptyPackageFilter" isEnabled="false"/>
-<child filterId="org.eclipse.jdt.internal.ui.PackagesView.EmptyInnerPackageFilter" isEnabled="true"/>
-</xmlDefinedFilters>
-</customFilters>
-<selectedElements>&#x0A;<selectedElement selectedElementPath="=EV3-project/src&lt;test"/>
 </selectedElements>
 </viewState>
 </view>
@@ -536,166 +536,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EV3-project/src/test/CameraClientTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EV3-project/src/mainpack/CameraClient.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EV3-project/src/mainpack/MainClass.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EV3-project/src/test/HelloWorld.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=EV3-project/\/opt\/leJOS\/lib\/ev3\/ev3classes.jar&lt;lejos.internal.ev3(EV3TextLCD.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EV3-project/src/mainpack/CameraClient.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EV3-project/src/test/ObjectDetectionBot.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EV3-project/src/test/HelloWorld.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EV3-project/src/mainpack/CameraClient.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EV3-project/src/mainpack/ObjectDetectionBot.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EV3-project/src/test/CameraDemo.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EV3-project/src/test/HttpStream.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/EV3-project/src/test/CameraClientTest.java"/>
 </editors>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="455" y="0"/>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="1525" y="0"/>
 </item>
-<item historyLabel="CameraClient.java" index="1">
-<position info="not_deleted" x="691" y="0"/>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="532" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="455" y="0"/>
+<item historyLabel="ObjectDetectionBot.java" index="1">
+<position info="not_deleted" x="3365" y="0"/>
 </item>
-<item historyLabel="CameraClient.java" index="1">
-<position info="not_deleted" x="691" y="0"/>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="1525" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="18" y="0"/>
+<item historyLabel="ObjectDetectionBot.java" index="1">
+<position info="not_deleted" x="3365" y="0"/>
 </item>
-<item historyLabel="CameraClient.java" index="1">
-<position info="not_deleted" x="885" y="0"/>
+<item historyLabel="ObjectDetectionBot.java" index="1">
+<position info="not_deleted" x="3350" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="549" y="0"/>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="2404" y="0"/>
 </item>
-<item historyLabel="CameraClient.java" index="1">
-<position info="not_deleted" x="885" y="0"/>
+<item historyLabel="ObjectDetectionBot.java" index="1">
+<position info="not_deleted" x="3350" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="558" y="0"/>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="2404" y="0"/>
 </item>
-<item historyLabel="HelloWorld.java" index="3">
-<position info="not_deleted" x="204" y="38"/>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="532" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="592" y="0"/>
+<item historyLabel="ObjectDetectionBot.java" index="1">
+<position info="not_deleted" x="3350" y="0"/>
 </item>
-<item historyLabel="CameraClient.java" index="1">
-<position info="not_deleted" x="946" y="0"/>
+<item historyLabel="ObjectDetectionBot.java" index="3">
+<position info="not_deleted" x="3455" y="0"/>
 </item>
-<item historyLabel="HelloWorld.java" index="3">
-<position info="not_deleted" x="74" y="0"/>
+<item historyLabel="ObjectDetectionBot.java" index="3">
+<position info="not_deleted" x="3637" y="0"/>
 </item>
-<item historyLabel="CameraClient.java" index="1">
-<position info="not_deleted" x="946" y="0"/>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="498" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="113" y="0"/>
+<item historyLabel="ObjectDetectionBot.java" index="3">
+<position info="not_deleted" x="3637" y="0"/>
 </item>
-<item historyLabel="CameraClient.java" index="1">
-<position info="not_deleted" x="2314" y="0"/>
+<item historyLabel="ObjectDetectionBot.java" index="3">
+<position info="not_deleted" x="4645" y="0"/>
 </item>
-<item historyLabel="CameraClientTest.java" index="0">
-<position info="not_deleted" x="2385" y="0"/>
+<item historyLabel="ObjectDetectionBot.java" index="3">
+<position info="not_deleted" x="3827" y="0"/>
 </item>
-<item historyLabel="EV3TextLCD.class" index="4">
-<position info="not_deleted" x="1109" y="0"/>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="497" y="0"/>
 </item>
-<item historyLabel="CameraClientTest.java" index="0">
-<position info="not_deleted" x="363" y="0"/>
+<item historyLabel="ObjectDetectionBot.java" index="3">
+<position info="not_deleted" x="3827" y="0"/>
 </item>
-<item historyLabel="CameraClient.java" index="1">
-<position info="not_deleted" x="2314" y="0"/>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="532" y="0"/>
 </item>
-<item historyLabel="HelloWorld.java" index="3">
-<position info="not_deleted" x="287" y="21"/>
+<item historyLabel="ObjectDetectionBot.java" index="3">
+<position info="not_deleted" x="3827" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="172" y="0"/>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="497" y="0"/>
 </item>
-<item historyLabel="CameraClient.java" index="1">
-<position info="not_deleted" x="2314" y="0"/>
+<item historyLabel="ObjectDetectionBot.java" index="3">
+<position info="not_deleted" x="4093" y="0"/>
 </item>
-<item historyLabel="HelloWorld.java" index="3">
-<position info="not_deleted" x="100" y="0"/>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="497" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="172" y="0"/>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="532" y="0"/>
 </item>
-<item historyLabel="CameraClient.java" index="5">
-<position info="not_deleted" x="2317" y="0"/>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="2404" y="0"/>
 </item>
-<item historyLabel="MainClass.java" index="2">
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="532" y="0"/>
+</item>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="2404" y="0"/>
+</item>
+<item historyLabel="CameraDemo.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="2404" y="0"/>
+</item>
+<item historyLabel="HttpStream.java" index="5">
+<position/>
+</item>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="2404" y="0"/>
+</item>
+<item historyLabel="HttpStream.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="2404" y="0"/>
+</item>
+<item historyLabel="HttpStream.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="2384" y="0"/>
+</item>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="532" y="0"/>
+</item>
+<item historyLabel="CameraClient.java" index="2">
+<position/>
+</item>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="532" y="0"/>
+</item>
+<item historyLabel="CameraClient.java" index="2">
+<position/>
+</item>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="532" y="0"/>
+</item>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="1391" y="0"/>
+</item>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="532" y="0"/>
+</item>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="1391" y="0"/>
+</item>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="393" y="0"/>
+</item>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="1391" y="0"/>
+</item>
+<item historyLabel="MainClass.java" index="0">
+<position info="not_deleted" x="532" y="0"/>
+</item>
+<item historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="1391" y="0"/>
+</item>
+<item historyLabel="MainClass.java" index="0">
 <position info="not_deleted" x="173" y="0"/>
 </item>
-<item historyLabel="CameraClient.java" index="5">
-<position info="not_deleted" x="2089" y="0"/>
-</item>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="393" y="0"/>
-</item>
-<item historyLabel="CameraClient.java" index="5">
-<position info="not_deleted" x="1970" y="0"/>
-</item>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="393" y="0"/>
-</item>
-<item historyLabel="ObjectDetectionBot.java" index="6">
-<position info="not_deleted" x="1255" y="0"/>
-</item>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="264" y="38"/>
-</item>
-<item historyLabel="ObjectDetectionBot.java" index="6">
-<position info="not_deleted" x="1255" y="0"/>
-</item>
-<item historyLabel="ObjectDetectionBot.java" index="6">
-<position/>
-</item>
-<item historyLabel="HelloWorld.java" index="7">
-<position info="not_deleted" x="287" y="20"/>
-</item>
-<item historyLabel="ObjectDetectionBot.java" index="6">
-<position info="not_deleted" x="2362" y="0"/>
-</item>
-<item historyLabel="ObjectDetectionBot.java" index="6">
-<position info="not_deleted" x="2468" y="0"/>
-</item>
-<item historyLabel="ObjectDetectionBot.java" index="6">
-<position/>
-</item>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="264" y="38"/>
-</item>
-<item historyLabel="CameraClient.java" index="5">
-<position info="not_deleted" x="1970" y="0"/>
-</item>
-<item historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="496" y="0"/>
-</item>
-<item historyLabel="ObjectDetectionBot.java" index="6">
-<position info="not_deleted" x="4521" y="0"/>
-</item>
-<item historyLabel="HttpStream.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ObjectDetectionBot.java" index="6">
-<position/>
-</item>
-<item historyLabel="CameraClientTest.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ObjectDetectionBot.java" index="6">
-<position/>
-</item>
-<item historyLabel="CameraClientTest.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ObjectDetectionBot.java" index="6">
-<position info="not_deleted" x="2732" y="0"/>
-</item>
-<item active="true" historyLabel="MainClass.java" index="2">
-<position info="not_deleted" x="496" y="0"/>
+<item active="true" historyLabel="CameraClient.java" index="2">
+<position info="not_deleted" x="1391" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -714,11 +710,14 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CameraClientTest.java" tooltip="EV3-project/src/test/CameraClientTest.java">
-<persistable path="/EV3-project/src/test/CameraClientTest.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HttpStream.java" tooltip="EV3-project/src/test/HttpStream.java">
 <persistable path="/EV3-project/src/test/HttpStream.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CameraDemo.java" tooltip="EV3-project/src/test/CameraDemo.java">
+<persistable path="/EV3-project/src/test/CameraDemo.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CameraClientTest.java" tooltip="EV3-project/src/test/CameraClientTest.java">
+<persistable path="/EV3-project/src/test/CameraClientTest.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ObjectDetectionBot.java" tooltip="EV3-project/src/test/ObjectDetectionBot.java">
 <persistable path="/EV3-project/src/test/ObjectDetectionBot.java"/>
@@ -749,9 +748,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Client.java" tooltip="testing/src/test/Client.java">
 <persistable path="/testing/src/test/Client.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CameraDemo.java" tooltip="EV3-project/src/test/CameraDemo.java">
-<persistable path="/EV3-project/src/test/CameraDemo.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SendPhoto.java" tooltip="EV3-project/src/test/SendPhoto.java">
 <persistable path="/EV3-project/src/test/SendPhoto.java"/>

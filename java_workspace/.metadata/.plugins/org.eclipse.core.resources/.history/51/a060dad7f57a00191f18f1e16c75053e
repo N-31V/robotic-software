@@ -36,6 +36,8 @@ public class CameraClient {
     	this.FRAME_SIZE = this.NUM_PIXELS * 2;
     	this.IP=ip;
     	this.video = ev3.getVideo();
+    	this.video.open(this.WIDTH, this.HEIGHT);
+    	this.frame = video.createFrame();
     	this.img = new BufferedImage(WIDTH, HEIGHT,BufferedImage.TYPE_INT_RGB);
     	
     }
@@ -45,10 +47,10 @@ public class CameraClient {
     }
     
     boolean SendPhoto(int port) throws UnknownHostException, IOException{
-    	this.video.open(this.WIDTH, this.HEIGHT);
-    	this.frame = video.createFrame();
         this.video.grabFrame(this.frame);
-        this.video.close();
+        this.video.grabFrame(this.frame);
+        this.video.grabFrame(this.frame);
+        this.video.grabFrame(this.frame);
         for(int i=0;i<this.FRAME_SIZE;i+=4) {
             int y1 = this.frame[i] & 0xFF;
             int y2 = this.frame[i+2] & 0xFF;

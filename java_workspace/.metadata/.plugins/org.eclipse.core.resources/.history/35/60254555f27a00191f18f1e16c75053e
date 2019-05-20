@@ -22,8 +22,8 @@ public class CameraClient {
     private int FRAME_SIZE;
     private String IP;
     private Video video;
-    private byte[] frame;
-    BufferedImage img;
+    //private byte[] frame;
+    //BufferedImage img;
 
     CameraClient(EV3 ev3, String ip) throws IOException{
     	this(ev3, 160, 120, ip);
@@ -36,7 +36,9 @@ public class CameraClient {
     	this.FRAME_SIZE = this.NUM_PIXELS * 2;
     	this.IP=ip;
     	this.video = ev3.getVideo();
-    	this.img = new BufferedImage(WIDTH, HEIGHT,BufferedImage.TYPE_INT_RGB);
+    	this.video.open(this.WIDTH, this.HEIGHT);
+    	//this.frame = video.createFrame();
+    	//this.img = new BufferedImage(this.WIDTH, this.HEIGHT,BufferedImage.TYPE_INT_RGB);
     	
     }
     
@@ -45,10 +47,7 @@ public class CameraClient {
     }
     
     boolean SendPhoto(int port) throws UnknownHostException, IOException{
-    	this.video.open(this.WIDTH, this.HEIGHT);
-    	this.frame = video.createFrame();
         this.video.grabFrame(this.frame);
-        this.video.close();
         for(int i=0;i<this.FRAME_SIZE;i+=4) {
             int y1 = this.frame[i] & 0xFF;
             int y2 = this.frame[i+2] & 0xFF;
@@ -59,6 +58,8 @@ public class CameraClient {
             this.img.setRGB((i % (this.WIDTH * 2)) / 2, i / (this.WIDTH * 2), rgb1);
             this.img.setRGB((i % (this.WIDTH * 2)) / 2 + 1, i / (this.WIDTH * 2), rgb2);
         }
+        byte[] frame = video.createFrame();
+        BufferedImage img = new BufferedImage(this.WIDTH, this.HEIGHT,BufferedImage.TYPE_INT_RGB);
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         ImageIO.write(this.img, "jpg", baos);
         byte[] imageBytes = baos.toByteArray();

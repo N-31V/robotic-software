@@ -12,9 +12,7 @@ public class MainClass {
 	public static void main(String[] args) throws IOException {
 		EV3 ev3 = (EV3) BrickFinder.getLocal(); // подключение к локальному ev3
 		CameraClient camera = new CameraClient(ev3, "10.0.1.2");
-		ObjectDetectionBot bot = new ObjectDetectionBot(ev3, camera);
-		bot.findobject();
-		bot.GripObject();
-        Delay.msDelay(1000);
+		boolean resp=camera.SendPhoto(9090); 
+        Delay.msDelay(5000);
 	}
 }

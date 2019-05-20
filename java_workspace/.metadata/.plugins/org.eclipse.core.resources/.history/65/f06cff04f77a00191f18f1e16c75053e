@@ -36,6 +36,8 @@ public class CameraClient {
     	this.FRAME_SIZE = this.NUM_PIXELS * 2;
     	this.IP=ip;
     	this.video = ev3.getVideo();
+    	//this.video.open(this.WIDTH, this.HEIGHT);
+    	//this.frame = video.createFrame();
     	this.img = new BufferedImage(WIDTH, HEIGHT,BufferedImage.TYPE_INT_RGB);
     	
     }

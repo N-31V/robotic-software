@@ -68,7 +68,12 @@ public class CameraClient {
         String response = in.readLine(); 
         in.close();
         clientSocket.close();
-        return true;
+        if(response=="Vanilla"){
+        	return true;        	
+        }
+        else{
+        	return false;
+        }
     }
  
     private static int convertYUVtoARGB(int y, int u, int v) {

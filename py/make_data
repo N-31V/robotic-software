@@ -1,0 +1,14 @@
+#!/bin/bash
+
+ffmpeg -i $1$2.mp4 -r $3 -f image2 $1.$2=%d.jpg
+
+convert $1.$2=* -crop 640x480+40 $1.$2_%03d.jpg
+
+rm  $1.$2=*
+
+convert $1.$2_* -resize 160 $1.$2-%03d.jpg
+
+rm  $1.$2_*
+
+mv $1.$2-* new
+

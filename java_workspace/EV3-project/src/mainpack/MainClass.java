@@ -13,8 +13,7 @@ public class MainClass {
 		EV3 ev3 = (EV3) BrickFinder.getLocal(); // подключение к локальному ev3
 		CameraClient camera = new CameraClient(ev3, "10.0.1.2");
 		ObjectDetectionBot bot = new ObjectDetectionBot(ev3, camera);
-		bot.findobject();
-		bot.GripObject();
+		bot.FindObject();
         Delay.msDelay(1000);
 	}
 }

@@ -14,4 +14,7 @@
 <fullyQualifiedTypeName name="lejos.hardware.sensor.EV3UltrasonicSensor"/>
 <fullyQualifiedTypeName name="lejos.hardware.ev3.LocalEV3"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="lejos.hardware.sensor.EV3GyroSensor"/>
+<fullyQualifiedTypeName name="lejos.robotics.filter.MeanFilter"/>
+<fullyQualifiedTypeName name="lejos.utility.Delay"/>
 </qualifiedTypeNameHistroy>

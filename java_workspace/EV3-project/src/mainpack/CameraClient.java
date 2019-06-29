@@ -68,7 +68,7 @@ public class CameraClient {
         String response = in.readLine(); 
         in.close();
         clientSocket.close();
-        if(response=="Vanilla"){
+        if(response.equals("true")){
         	return true;        	
         }
         else{
